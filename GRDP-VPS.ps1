@@ -19,4 +19,4 @@ Invoke-WebRequest https://raw.githubusercontent.com/OnurCreed/secretsource/main/
 Invoke-WebRequest https://github.com/Onurcreed4/updated-gt/raw/main/Growtopia.zip -OutFile "C:\Users\Public\Desktop\Growtopia.zip"
 Expand-Archive -Path "C:\Users\Public\Desktop\Growtopia.zip" -DestinationPath "C:\Users\runneradmin\Appdata\Local"
 New-Item -ItemType SymbolicLink -Path "C:\Users\Public\Desktop" -Name "Growtopia.lnk" -Value "C:\Users\runneradmin\Appdata\Local\Growtopia\Growtopia.exe"
-Remove-Item -Path "C:\Users\Public\Desktop\Growtopia.zip" -Recurse
+Remove-Item C:\Users\Public\Desktop\Growtopia.zip -Recurse
